@@ -8,21 +8,19 @@ int main(){
 	printf("Enter the coefficient of equation Ax^2+Bx+C\nA = ");
 	scanf("%d",&a);
 	printf("B = ");
-	scanf("%d",&a);
+	scanf("%d",&b);
 	printf("C = ");
-	scanf("%d",&a);
-	float det=sqrt(b*b-4*a*c);
-// 	printf("Determinant is %f\n",det);
+	scanf("%d",&c);
+	float det=b*b-4*a*c;
 	if(det<0){
 	    puts("The given equation has complex solution.");
 	}else if(det==0){
 	    float root= (-1*b)/(2*a);
-	    printf("The root is %0.2f",root);
+	    printf("The given equation is perfect square and its root is %0.2f",root);
 	}else{
-	    float x1=(-b+det)/(2*a);
-	    float x2=(-b-det)/(2*a);
+	    float x1=(-b+sqrt(det))/(2*a);
+	    float x2=(-b-sqrt(det))/(2*a);
 	    printf("The solution of given equation is:\nx=%0.2f\nx=%0.2f",x1,x2);
 	}
 	return 0;
 }
-
