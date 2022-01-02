@@ -7,7 +7,7 @@ int* add(int a,int b){
 }
 int main(){
 	int a=2,b=3;
-	int* sum=add(a,b);
-	printf("%d",*sum);
+	int* p=add(a,b);
+	printf("%d",*p);
 	return 0;
 }
