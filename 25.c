@@ -1,4 +1,4 @@
-//25 Write a C programs that reads n numbers and print only top five numbers using dynamic memory allocations
+//25 Write a C programs that reads n numbers and print only largest five numbers using dynamic memory allocations
 #include <stdio.h>
 #include <stdlib.h>
 int main(){
