@@ -6,11 +6,7 @@ struct time{
 	int sec;
 };
 int main(){
-	struct time t1, t2, t3;
-	puts("Enter the first time as HH MM SS here:");
-	scanf("%d%d%d",&t1.hour,&t1.min,&t1.sec);
-	puts("Enter the second time as HH MM SS here:");
-	scanf("%d%d%d",&t2.hour,&t2.min,&t2.sec);
+	struct time t1={1,40,30}, t2={2,30,50}, t3;
 	t3.hour=t1.hour+t2.hour;
 	t3.min=t1.min+t2.min;
 	t3.sec=t1.sec+t2.sec;
