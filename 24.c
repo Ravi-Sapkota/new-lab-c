@@ -1,4 +1,4 @@
-//25 Write a C programs that reads n numbers and print only top five nubers using dynamic memory allocations
+//24 Write a C program that returns pointer
 #include <stdio.h>
 
 int* add(int a,int b){
